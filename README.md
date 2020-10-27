@@ -1,10 +1,21 @@
-# DNN-Speech-Recognizer-Udacity
-Udacity project. Trains multiple architectures for ASR acoustic models and compares them. Original Udacity repository can be found [here](https://github.com/udacity/AIND-VUI-Capstone).
-
 [//]: # (Image References)
 
 [image1]: ./images/pipeline.png "ASR Pipeline"
 [image2]: ./images/select_kernel.png "select aind-vui kernel"
+
+# DNN-Speech-Recognizer-Udacity
+Udacity project. Trains multiple architectures for ASR acoustic models and compares them. Original Udacity repository can be found [here](https://github.com/udacity/AIND-VUI-Capstone).
+
+Model architectures trained:
+- Simple, single layer GRU
+- Single layer GRU with Batch Normalization
+- CNN layer and GRU layer, each followed by Batch Normalization.
+- Deep GRU (2 layers).
+- Single layer Bidirectional GRU with Batch Normalization.
+- Deep Bidirectional GRU (2 layers) with Batch Normalization.
+- CNN layer followed by 2 Bidirectional GRU layers. Each layer followed by Batch Normalization.
+
+Each model ended with a Time Distributed Dense layer and a softmax activation function.
 
 ## Project Overview
 
